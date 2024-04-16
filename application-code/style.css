@@ -1,0 +1,259 @@
+/* Add a mobile-first responsive approach */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Styling for the Header section */
+header {
+    background-color: #222;
+    padding: 50px 0; /* Increase padding for more space */
+    text-align: center;
+    color: #fff;
+    margin-top: 20px; /* Adjust margin to move the header down */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-image img {
+    border-radius: 50%;
+    max-width: 100px; /* Adjust the size as needed */
+    margin-right: 20px;
+}
+
+.header-text {
+    text-align: left; /* Adjust as needed */
+}
+
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Styling for the Skills section */
+#skills {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+#skills h2 {
+    color: #333;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* Styling for the Projects section */
+.projects-section {
+    padding: 40px 0;
+}
+
+.projects-section h2 {
+    color: #333;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Move border to the project container */
+}
+
+.project-with-image {
+    flex-direction: row-reverse; /* Reverse the order of content and image */
+}
+
+.project-content {
+    flex: 1; /* Use flex to distribute available space */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 10px; /* Adjust spacing between content and image */
+    text-align: justify; /* Add this line to justify the text */
+}
+
+.project-image img {
+    border-radius: 8px; /* Apply border radius to the image */
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+}
+
+
+/* Styling for the boxed sections */
+.boxed-section {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out; /* Add a subtle animation effect */
+}
+
+/* On hover, add a slight lift effect */
+.boxed-section:hover {
+    transform: translateY(-5px);
+}
+
+/* More spacious and elegant font for headings */
+.boxed-section h2 {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ensure text inside the boxed section is legible */
+.boxed-section p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* Styling for the Resume section */
+.resume-section {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.resume-section h2 {
+    color: #333;
+}
+
+.resume-preview {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.download-button:hover {
+    background-color: #555;
+}
+
+
+/* Styling for the Education section */
+.education-section {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.education-section h2 {
+    color: #333;
+}
+
+.education-entry {
+    background-color: #f0f0f0; /* Background color for the box */
+    border: 2px solid #ddd; /* Border color */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    padding: 20px; /* Padding inside the box */
+    margin-bottom: 20px; /* Spacing between each education entry */
+}
+
+.education-entry h3 {
+    color: #333; /* Heading color */
+}
+
+.education-entry p {
+    color: #555; /* Text color */
+}
+
+/* Style for about-section */
+.about-section {
+    text-align: justify;
+}
+
+
+
